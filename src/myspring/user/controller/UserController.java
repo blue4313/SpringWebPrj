@@ -45,11 +45,11 @@ public class UserController {
 		genderList.add("여");
 		
 		List<String> cityList = new ArrayList<String>();
-		cityList.add("서울");
-		cityList.add("경기");
-		cityList.add("대구");
-		cityList.add("부산");
-		cityList.add("제주");
+		cityList.add("서울2");
+		cityList.add("경기2");
+		cityList.add("대구2");
+		cityList.add("부산2");
+		cityList.add("제주2");
 		
 		Map<String, List<String>> map = new HashMap<String, List<String>>();
 		map.put("genderList", genderList);
