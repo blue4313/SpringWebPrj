@@ -3,10 +3,27 @@ package myspring.di.xml;
 import java.util.List;
 import java.util.Map;
 
-public class Hello {
+import javax.annotation.Resource;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import myspring.di.xml.Printer;
+
+@Component
+public class Hello {
+	
+//	@Value("${myname}")
+	@Value("1234")
 	private String name;
+	
+//	@Autowired
+//	@Qualifier("stringPrinter")
+//	@Resource(name="${printer1}")
+	@Resource(name="stringPrinter")
 	private Printer printer;
+	
 	private List<String> names;
 	private Map<String, Integer> ages;
 	

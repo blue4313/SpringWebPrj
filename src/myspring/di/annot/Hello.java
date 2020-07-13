@@ -13,12 +13,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class Hello {
 	
-	@Value("${myname}")
+//	@Value("${myname}")
+	@Value("1234")
 	private String name;
 	
 //	@Autowired
 //	@Qualifier("stringPrinter")
-	@Resource(name="${printer1}")
+//	@Resource(name="${printer1}")
+	@Resource(name="stringPrinter")
 	private Printer printer;
 	
 	private List<String> names;

@@ -1,5 +1,8 @@
 package myspring.di.xml;
 
+import org.springframework.stereotype.Component;
+
+@Component("consolePrinter")
 public class ConsolePrinter implements Printer {
 
 	@Override
