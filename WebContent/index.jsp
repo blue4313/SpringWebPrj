@@ -1,1 +1,1 @@
-<% response.sendRedirect("getUserList.do"); %>
+<%response.sendRedirect("getUserList.do");%>
